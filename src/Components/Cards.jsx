@@ -17,8 +17,8 @@ function Cards(){
         { id: 6, color: 'pink', stat: "" },
         { id: 7, color: 'orange', stat: "" },
         { id: 7, color: 'orange', stat: "" },
-        { id: 8, color: 'white', stat: "" },
-        { id: 8, color: 'white', stat: "" }
+        { id: 8, color: 'grey', stat: "" },
+        { id: 8, color: 'grey', stat: "" }
     ].sort(() => Math.random() - 0.5))
 
     const [prev, setPrev] = useState(-1)
@@ -52,12 +52,14 @@ function Cards(){
         }
     }
 
-    return (
+    return (<><h1>React Memory-Game</h1>
         <div className="container">
+             
             { items.map((item, index) => (
                 <Card key={index} item={item} id={index} handleClick={handleClick} />
             )) }
         </div>
+        </>
     )
 }
 

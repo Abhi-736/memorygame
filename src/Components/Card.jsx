@@ -3,7 +3,7 @@ function Card({item, id, handleClick}){
 
     return (
         <div className={"card" + itemClass} onClick={() => handleClick(id)}>
-            <div  style={{backgroundColor:item.color,height:'150px',width:'150px'}}></div> 
+            <div className="small" style={{backgroundColor:item.color,height:'110px',width:'90%'}}></div> 
         </div>
     )
 }
